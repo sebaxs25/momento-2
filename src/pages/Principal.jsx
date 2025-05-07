@@ -4,13 +4,11 @@ function Principal(){
     return (
         <div className="principal">
             <MenuLateral/>
-            <div className="contenido">
-                <main>
-                    <section>
-                        <h2></h2>
-                    </section>
-                    <Contenido/>
-                </main>
+            <div className="contenido-principal">
+                <section>
+                    <h2>Home</h2>
+                    
+                </section>
             </div>
         </div>
     )
