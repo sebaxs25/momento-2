@@ -1,3 +1,6 @@
+body{
+    background-color: aqua;
+}
 .from{
     width: 300px;
     margin: 50px auto;
@@ -5,19 +8,45 @@
     padding: 20px;
     border-radius: 15px;
     text-align: center;
+    background-color:aquamarine;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  width: 320px;
 }
 .input{
-    width: 100%;
-    padding: 10px;
-    margin: 8px 0;
-    border-radius: 15px;
-    border: 1px solid black;
-    outline: none;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+.input:focus{
+    border-color: #4a90e2;
 }
 button{
-    padding: 10px 20px;
-    border: 2px solid black;
-    background: white;
-    cursor: pointer;
-    margin-top: 10px;
+  background-color: #4a90e2;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+button:hover {
+  background-color: #357ab8;
+}
+.link{
+    text-align: center;
+  font-size: 13px;
+   color: #4a90e2;
+  text-decoration: none;
+  font-weight: 500;
+    outline: none;
+}
+.link:hover{
+      text-decoration: underline;
 }

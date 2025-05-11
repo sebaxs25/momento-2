@@ -1,11 +1,15 @@
 import MenuLateral from "./MenuLateral"
+import './AcercaDe.css'
 
 function Contacto (){
     return(
+        
         <section>
-            <MenuLateral/>
-            <h1>Contacto</h1>
-        <form>
+            <div>
+                 <MenuLateral/>
+            </div>
+            <h1 className="titulo-contacto">Contacto</h1>
+        <form className="formulario-contacto">
                 <input type="text" placeholder="Nombre" /><br />
                 <input type="email" placeholder="Correo" /><br />
                 <textarea placeholder="Mensaje" /><br />

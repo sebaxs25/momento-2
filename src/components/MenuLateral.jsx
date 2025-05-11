@@ -1,8 +1,6 @@
 
-import { Link } from "react-router-dom"
-import Contenido from "./Contenido"
-
-
+import { Link,Outlet } from "react-router-dom"
+import '../pages/Principal.css'
 function MenuLateral(){
 
 
@@ -18,6 +16,9 @@ function MenuLateral(){
           </nav>
         </aside>
         
+      <main className="contenido-principal">
+        <Outlet/>
+      </main>
     </div>   
     )
 }
