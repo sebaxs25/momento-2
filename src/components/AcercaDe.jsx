@@ -5,15 +5,26 @@ function AcercaDe() {
     <section className="parrafo_acercade"> 
       <div>
        <MenuLateral/>
-    </div>
-     
-      <h1 >Acerca de</h1>
-      <p >
-       El componente Outlet en react-router-dom sirve para renderizar las rutas hijas dentro de una ruta principal o layout compartido.
-      <br /><br />
-🧠 ¿Qué hace exactamente?
-    Cuando tienes una estructura de rutas anidadas, Outlet  es el lugar donde se va a mostrar el contenido de la subruta. Es como un "contenedor dinámico" que cambia según la ruta seleccionada, sin recargar toda la página.
-      </p>
+      </div>
+       <h1 className="acerca-titulo">Sobre Nosotros</h1>
+      <div className="cuadros-grid">
+        <div className="cuadro">
+          <h3>Historia</h3>
+          <p>Desde 2010 brindando atención de calidad y compromiso humano.</p>
+        </div>
+        <div className="cuadro">
+          <h3>Misión</h3>
+          <p>Ofrecer servicios de salud accesibles, confiables y humanos.</p>
+        </div>
+        <div className="cuadro">
+          <h3>Visión</h3>
+          <p>Ser líderes en atención médica integral y cercana al paciente.</p>
+        </div>
+        <div className="cuadro">
+          <h3>Equipo</h3>
+          <p>Contamos con médicos, enfermeros y especialistas comprometidos.</p>
+        </div>
+      </div>
     </section>
   );
 }
