@@ -1,5 +1,5 @@
 .menu_lateral{
-  height: 100vh;
+  height: 80vh;
   width: 200px;
   border: 2px solid black;
   padding: 20px;
@@ -7,15 +7,17 @@
   flex-direction: column;
   align-items: center;
   gap: 20px;
-    background-color: darkgrey;
+  background-color: darkgrey;
 
 }
-.contenido-principal {
-  flex: 1;                     
-  padding: 40px;
+.contenido-principal {                   
   display: flex;
   align-items: center;
   justify-content: center;
+    flex-direction: column;
+  flex: 1;
+  padding: 40px;
+  display: flex;
 }
 .navegacion_item {
   display: block;
@@ -41,6 +43,121 @@ background: linear-gradient(to right, #6dd5ed, #2193b0);
   box-shadow: 0 6px 12px rgba(0,0,0,0.2);
 }
 .navegacion_item.active {
-  background: #2980b9;
+  background: #80888d;
   color: white;
   border-color: #1f6391;
+  }
+.parrafo_acercade{
+  border-radius: 10px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding: 40px;
+  display: flex;
+
+}
+.contacto{
+   flex: 1;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+}
+.titulo-contacto {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Formulario */
+.formulario-contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 400px;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Inputs y textarea */
+.formulario-contacto input,
+.formulario-contacto textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: inherit;
+  resize: vertical;
+}
+
+.formulario-contacto textarea {
+  min-height: 100px;
+}
+
+/* Botón */
+.formulario-contacto button {
+  background-color: #4a90e2;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.formulario-contacto button:hover {
+ background-color: #357ab8;
+ }
+
+ .servicio{
+
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+ }
+
+/* Título */
+.titulo-servicios {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Grid de tarjetas */
+.servicios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  width: 100%;
+  max-width: 900px;
+}
+
+/* Tarjeta individual */
+.servicio-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.servicio-card:hover {
+  transform: translateY(-5px);
+}
+
+.servicio-card h3 {
+  color: #4a90e2;
+  margin-bottom: 10px;
+}
+
+.servicio-card p {
+  color: #555;
+  font-size: 14px;
+}

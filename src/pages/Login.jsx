@@ -10,7 +10,7 @@ function Login () {
             Iniciar sesion
             <input type="text" className="input" onChange={(e)=> setUsuario(e.target.value)} placeholder="Usuario" />
             <input type="text" className="input" onChange={(e) => setContrasena(e.target.value)} placeholder="Contraseña" />
-            <button type="button">Iniciar</button>
+            <Link type="button" to ="/principal" className="button"  >Iniciar</Link>
             <Link to= "/registro"> ¿no tienes cuenta? </Link>
         </form>
     );

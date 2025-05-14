@@ -5,10 +5,9 @@ function Principal(){
         <div className="principal">
             <MenuLateral/>
             <div className="contenido-principal">
-                <section>
+       
                     <h2>Home</h2>
 
-                </section>
             </div>
         </div>
     )

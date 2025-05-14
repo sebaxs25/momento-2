@@ -8,16 +8,25 @@ const servicios = [
 function Servicio (){
     return(
            
-        <section>
+        <section className="servicio">
           <div>
           <MenuLateral/>
           </div>
-            <h1>Servicio</h1>
-            <ul>
-            {servicios.map((s, i) => (
-          <li key={i}>{s.icono} {s.nombre}</li>
-        ))}
-      </ul>
+           <h1 className="titulo-servicios">Nuestros Servicios</h1>
+      <div className="servicios-grid">
+        <div className="servicio-card">
+          <h3>Consulta Médica</h3>
+          <p>Atención personalizada con profesionales de la salud.</p>
+        </div>
+        <div className="servicio-card">
+          <h3>Laboratorio Clínico</h3>
+          <p>Análisis y exámenes con tecnología moderna.</p>
+        </div>
+        <div className="servicio-card">
+          <h3>Urgencias</h3>
+          <p>Atención 24/7 en situaciones críticas.</p>
+        </div>
+      </div>
         </section>
     )
 }

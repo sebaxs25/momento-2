@@ -1,10 +1,10 @@
 import MenuLateral from "./MenuLateral"
-import './AcercaDe.css'
+import '../pages/Principal.css'
 
 function Contacto (){
     return(
         
-        <section>
+        <section className="contacto">
             <div>
                  <MenuLateral/>
             </div>
