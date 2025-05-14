@@ -1,5 +1,5 @@
 import MenuLateral from "../components/MenuLateral";
-import Contenido from "../components/Contenido"
+
 function Principal(){
     return (
         <div className="principal">

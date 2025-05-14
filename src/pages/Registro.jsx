@@ -13,7 +13,7 @@ const [ getEmail,setEmail]=useState("")
             <input type="text" className="input" onChange={(e) => setContrasena(e.target.value)} placeholder="Contraseña" />
             <input type="text" className="input" onChange={(e) => setNombre(e.target.value)} placeholder="Nombre" />
             <input type="text" className="input" onChange={(e) => setEmail(e.target.value)} placeholder="Email" />
-            <button type="button">Registrate</button>
+            <Link to= "/" className="button_registro">Registrate</Link>
             <Link to="/" className="link"> ¿ya tienes cuenta?</Link>
         </form>
     )
